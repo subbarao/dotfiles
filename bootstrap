@@ -1,0 +1,10 @@
+install iterm2
+install alfred configure to ,tab
+install monaco for powerline font
+
+
+
+install get.vimfiles.sh commands from settting vim directory inside the vimhome directory of clone
+install vim-bundler
+vbundler install
+execute vimrc_bundle command to bootstrap
