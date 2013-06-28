@@ -31,7 +31,7 @@ let g:ctrlp_prompt_mappings = {
   \ 'PrtHistory(1)':        ['<up>'],
   \ 'MarkToOpen()':         ['<c-a>'],
   \ }
-map <Leader>l :CtrlPCurFile<CR>
+map <Leader>f :CtrlPCurFile<CR>
 map <Leader>r :CtrlPMRUFiles<CR>
 map <Leader>b :CtrlPBuffer<CR>
 map <Leader>g :CtrlPLine<CR>
@@ -62,9 +62,6 @@ let g:indent_guides_auto_colors = 0
 autocmd VimEnter * IndentGuidesEnable
 hi IndentGuidesOdd  guibg=#003540  ctermbg=0
 hi IndentGuidesEven guibg=#003540  ctermbg=0
-
-" Tagbar plugin config
-nnoremap <Leader>i :TagbarToggle<CR>
 
 " YankRing plugin config
 nmap yr :YRShow<CR>
@@ -121,7 +118,7 @@ hi! link SignColumn LineNr
 " tmux/rspec related config
 nnoremap <Leader>RF :cgetfile tmp/quickfix \| copen<cr>
 let g:TmuxTargetSession = "/tmp/side"
-let g:TmuxTargetPane    = "1.2"
+let g:TmuxTargetPane    = "1.0"
 let g:TmuxRspecOpts     = "--require ./.rspec/quickfix_formatter --format QuickfixFormatter:tmp/quickfix --require ./.rspec/progress_with_failures --format ProgressWithFailures --colour --loadby mtime --drb"
 set errorformat=%f:%l\ %n\ %m
 
