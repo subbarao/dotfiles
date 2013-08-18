@@ -160,3 +160,6 @@ function! s:isolate_selection() range
 endfunction
 
 vnoremap ,f :call <SID>isolate_selection()<cr>
+
+nnoremap <C-n> :bnext<CR>
+nnoremap <C-p> :bprevious<CR>
